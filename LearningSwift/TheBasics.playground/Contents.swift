@@ -202,7 +202,9 @@ func getOldestAge() {
     guard let oldestAge2 = someAges.last else {
         return
     }
+    print("\(oldestAge2) is the oldest age")
 }
 
-// force unwrap
-
+getOldestAge()
+// force unwrap // generates many errors
+let oldestAge3 = someAges.last!
